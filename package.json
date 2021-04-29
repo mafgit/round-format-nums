@@ -1,0 +1,28 @@
+{
+  "name": "round-format-nums",
+  "version": "1.0.0",
+  "description": "Round and format numbers with units at the end.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mafgit/round-format-nums.git"
+  },
+  "keywords": [
+    "format",
+    "round",
+    "number",
+    "javascript",
+    "npm",
+    "nodejs",
+    "node"
+  ],
+  "author": "maf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mafgit/round-format-nums/issues"
+  },
+  "homepage": "https://github.com/mafgit/round-format-nums#readme"
+}
