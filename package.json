@@ -2,7 +2,7 @@
   "name": "round-format-nums",
   "version": "1.0.0",
   "description": "Round and format numbers with units at the end.",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
