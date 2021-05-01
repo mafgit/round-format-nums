@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "Round and format numbers with units at the end.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mafgit/round-format-nums.git"
@@ -20,7 +18,7 @@
     "node"
   ],
   "author": "maf",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/mafgit/round-format-nums/issues"
   },
