@@ -1,6 +1,6 @@
 {
   "name": "round-format-nums",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Round and format numbers with units at the end.",
   "main": "index.js",
   "scripts": {},

@@ -1,5 +1,11 @@
 # Round and format numbers
 
+[![NPM](https://img.shields.io/npm/dt/round-format-nums?style=for-the-badge)](https://www.npmjs.com/package/round-format-nums)
+[![NPM](https://img.shields.io/npm/v/round-format-nums?style=for-the-badge)](https://www.npmjs.com/package/round-format-nums)
+[![NPM](https://img.shields.io/npm/l/round-format-nums?style=for-the-badge)](https://www.npmjs.com/package/round-format-nums)
+[![NPM](https://img.shields.io/bundlephobia/min/round-format-nums?style=for-the-badge)](https://www.npmjs.com/package/round-format-nums)
+
+
 ## Installation
 ```bash
 npm i round-format-nums
