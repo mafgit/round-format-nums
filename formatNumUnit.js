@@ -35,6 +35,8 @@ const formatNumUnit = (n, dp, config = defaultConfig) => {
   config.forEach((option) => {
     if (option.minDigits < 0 || option.maxDigits < 0)
       throw new Error('minDigits and maxDigits must be 0 or greater.')
+    if (option.minDigits > option.maxDigits)
+      throw new Error('minDigits must not be greater than maxDigits')
     if (len >= option.minDigits && len <= option.maxDigits)
       chosenOption = option
   })
