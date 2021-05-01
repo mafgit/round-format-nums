@@ -1,6 +1,6 @@
 const roundDp = require('./roundDp')
 
-const formatNumUnitConfig = [
+const defaultConfig = [
   { symbol: 'K', minDigits: 4, maxDigits: 6 },
   { symbol: 'M', minDigits: 7, maxDigits: 9 },
   { symbol: 'B', minDigits: 10, maxDigits: Infinity },
@@ -10,15 +10,15 @@ const formatNumUnitConfig = [
  * Formats and rounds a number, and places a unit at the end if needed.
  * @param {number} n - Number
  * @param {number} dp - Decimal places
- * @param {{}[]}} config - Array of objects
+ * @param {{}[]} config - Array of option objects
  * @example
  * ```js
  * { symbol: 'K', minDigits: 4, maxDigits: 6 }
- * // e.g formatNumUnitConfig(12345, 2) --> 12.35 K
+ * // e.g formatNumUnit(12345, 2) --> 12.35K
  * ```
  * @returns Formatted and rounded number.
  */
-const formatNumUnit = (n, dp = 1, config = formatNumUnitConfig) => {
+const formatNumUnit = (n, dp, config = defaultConfig) => {
   if (typeof n !== 'number' || typeof dp !== 'number')
     throw new Error('Both arguments must be numbers.')
   if (dp < 0) throw new Error('Decimal places must be 0 or greater.')
@@ -45,7 +45,7 @@ const formatNumUnit = (n, dp = 1, config = formatNumUnitConfig) => {
     chosenOption.minDigits - 1 < 0 ? 0 : chosenOption.minDigits - 1
   let divBy = parseInt('1' + '0'.repeat(repeatTimes))
 
-  return roundDp(n / divBy, dp) + ' ' + chosenOption.symbol
+  return roundDp(n / divBy, dp) + chosenOption.symbol
 }
 
 module.exports = formatNumUnit
